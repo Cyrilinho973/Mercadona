@@ -1,37 +1,12 @@
-.products-presentation {
-    min-height: 90vh;
-    position: relative;
-    overflow: hidden;
-}
-.products-presentation:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top:0;
-    /* min-height: 90vh; */
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    opacity: 0.4;
-    background-image: url('/images/wallpaper/retail-shop.jpg');
-    background-size: auto;
-    background-position: center;
-    background-repeat: repeat;
-}
-  /* background-color: rgba(0, 0, 0, 0.648); */
-.products-list {
-    position: relative;
-    z-index: 2;
-    margin-top: 15vh;
-    min-height: 75vh;
-}
-
+/* header.html.twig */
 .header {
     background-color: #dccfbe;
-    min-height: 10vh;
+    height: 20px;
 }
-
+.form-select {
+    color: #542525;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .header-button-go {
     background-color: #f56247;
     color: #865D5D ;
@@ -41,80 +16,10 @@
     height: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .header-button-dashboard {
     background-color: #865D5D;
     color: #dccfbe ;
     border: none;
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.form-select {
-    color: #542525;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.footer {
-    background-color: #865d5d;
-    color: #f56247;
-    min-height: 10vh;
-}
-.footer-copyright {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.network-icon {
-    width: 2rem;
-    margin: 5px;
-}
-
-hr {
-    color: #f56247;
-}
-.card-product-category {
-    background-color: #865d5d; 
-    color: #dccfbe;
-    width: max-content;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.card-product-label{
-    text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-}
-.card {
-    max-width: 520px; 
-    background-color: #dccfbe;
-    opacity: 0.85;
-}
-.card-product-price {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.card-discount-price {
-    color: red;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.card-product-base-price {
-    text-decoration: line-through;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.card-footer {
-    border-top: #f56247 solid 2px;
-}
-.card-header {
-    border-bottom: #f56247 solid 2px;
-}
-.card-discount-rate {
-    color: red;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.card-discount-stop-date {
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.card-product-description {
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
