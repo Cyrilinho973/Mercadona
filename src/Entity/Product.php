@@ -33,14 +33,14 @@ class Product
     #[ORM\ManyToOne(inversedBy: 'products')]
     private ?Discount $discount = null;
 
-    #[Vich\UploadableField(mapping: 'products', fileNameProperty: 'image_name', size: 'image_size')]
-    private ?File $image_file = null;
+    #[Vich\UploadableField(mapping: 'products', fileNameProperty: 'imageName', size: 'imageSize')]
+    private ?File $imageFile = null;
 
     #[ORM\Column(nullable: true)]
-    private ?string $image_name = null;
+    private ?string $imageName = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $image_size = null;
+    private ?int $imageSize = null;
 
     #[ORM\Column(nullable: true)]
     private ?\DateTimeImmutable $updatedAt = null;
@@ -110,11 +110,11 @@ class Product
         return $this;
     }
 
-    public function setImageFile(?File $image_file = null): void
+    public function setImageFile(?File $imageFile = null): void
     {
-        $this->image_file = $image_file;
+        $this->imageFile = $imageFile;
 
-        if (null !== $image_file) {
+        if (null !== $imageFile) {
             // It is required that at least one field changes if you are using doctrine
             // otherwise the event listeners won't be called and the file is lost
             $this->updatedAt = new \DateTimeImmutable();
@@ -123,31 +123,31 @@ class Product
 
     public function getImageFile(): ?File
     {
-        return $this->image_file;
+        return $this->imageFile;
     }
 
-    public function setImageName(?string $image_name): static
+    public function setImageName(?string $imageName): static
     {
-        $this->image_name = $image_name;
+        $this->imageName = $imageName;
 
         return $this;
     }
 
     public function getImageName(): ?string
     {
-        return $this->image_name;
+        return $this->imageName;
     }
 
-    public function setImageSize(?int $image_size): static
+    public function setImageSize(?int $imageSize): static
     {
-        $this->image_size = $image_size;
+        $this->imageSize = $imageSize;
 
         return $this;
     }
 
     public function getImageSize(): ?int
     {
-        return $this->image_size;
+        return $this->imageSize;
     }
 
     public function getUpdatedAt(): ?\DateTimeImmutable

@@ -5,12 +5,12 @@
                 <div class="card col-4 m-3">
                     <div class="card-header row g-0 d-flex justify-content-center">
                         <span class="card-product-category text-light rounded-pill py-1 px-3">
-                            {{ product.category }}
+                            {{ product.category.label }}
                         </span>
                     </div>
                     <div class="row g-0 m-2 d-flex align-items-center">
                         <div class="col-6">
-                            <img src={{ asset('images/products/' ~ product.image_name) }} class="img-fluid rounded" alt="Image {{ product.label }}">
+                            <img src={{ asset('images/products/' ~ product.imageName) }} class="img-fluid rounded" alt="Image {{ product.label }}">
                         </div>
                         <div class="col-6">
                             <div class="card-body">
