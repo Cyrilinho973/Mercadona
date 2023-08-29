@@ -1,0 +1,35 @@
+<main class="container-fluid products-presentation">
+    <div class="products-list px-3">
+        <div class="row d-flex justify-content-center">
+            {% for product in products %}
+                <div class="card col-4 m-3">
+                    <div class="card-header row g-0 d-flex justify-content-center">
+                        <span class="card-product-category text-light rounded-pill py-1 px-3">
+                            {{ product.category }}
+                        </span>
+                    </div>
+                    <div class="row g-0 m-2 d-flex align-items-center">
+                        <div class="col-6">
+                            <img src={{ asset('images/products/' ~ product.image_name) }} class="img-fluid rounded" alt="Image {{ product.label }}">
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body">
+                                <h5 class="card-product-label">{{ product.label }}</h5>
+                                <p class="card-product-description">{{ product.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer row g-0 text-center">
+                        <div class="col-6">
+                            <div>
+                                <h1 class="card-product-price">{{ product.price }}€</h1>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
