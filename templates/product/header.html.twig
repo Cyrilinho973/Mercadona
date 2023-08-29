@@ -6,8 +6,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-                <div class="col-1"></div> 
-                <form class="d-flex mt-2 col-3" method="post">
+                <div class="col-12 col-lg-1"></div> 
+                <form class="d-flex mt-2 col-12 col-md-8 col-lg-5 col-xl-4 col-xxl-3" method="post">
                     <select class="form-select me-2" name="categories" id="categories" title="category-select">
                         <option value="">All categories</option>
                         {% for category in categories %}
@@ -21,7 +21,7 @@
                     </select>
                     <button class="header-button-go btn" type="submit">GO</button>
                 </form>
-                <div class="col-8 d-flex justify-content-start justify-content-md-end"> 
+                <div class="col-12 col-md-4 col-lg-6 col-xl-7 col-xxl-8 d-flex justify-content-start justify-content-md-end"> 
                     <button class="header-button-dashboard btn btn-primary mt-2 w-auto" href="#">Dashboard</button>
                 </div>
             </div>

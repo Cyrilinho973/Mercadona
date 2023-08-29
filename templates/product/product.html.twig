@@ -1,18 +1,19 @@
 <main class="container-fluid products-presentation">
     <div class="products-list px-3">
+        <h1 class="catalog-title text-center pt-3">Catalogue</h1>
         <div class="row d-flex justify-content-center">
             {% for product in products %}
-                <div class="card col-4 m-3">
+                <div class="card col-12 col-lg-4 m-3">
                     <div class="card-header row g-0 d-flex justify-content-center">
                         <span class="card-product-category text-light rounded-pill py-1 px-3">
                             {{ product.category.label }}
                         </span>
                     </div>
                     <div class="row g-0 m-2 d-flex align-items-center">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <img src={{ asset('images/products/' ~ product.imageName) }} class="img-fluid rounded" alt="Image {{ product.label }}">
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="card-body">
                                 <h5 class="card-product-label">{{ product.label }}</h5>
                                 <p class="card-product-description">{{ product.description }}</p>
