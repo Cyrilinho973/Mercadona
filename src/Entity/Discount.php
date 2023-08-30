@@ -36,6 +36,11 @@ class Discount
         $this->products = new ArrayCollection();
     }
 
+    public function __toString()
+    {
+        return $this->getLabel();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
