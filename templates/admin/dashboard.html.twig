@@ -1,11 +1,147 @@
 {% extends '@EasyAdmin/page/content.html.twig' %}
 
-{% block content_title %}Tableau de bord d'administration du site www.Mercadona.es{% endblock %}
+{% block content_title %}
+
+    <h1 class="text-center" style="text-decoration: overline; color: #542525; background-color: #dccfbe;">
+        Tableau de bord d'administration du site www.Mercadona.es
+    </h1>
+    <a 
+        class="dashboard-button-catalog btn mt-2 w-auto"
+        style="background-color: #f56247; color: #542525;"
+        href="{{ path('app_product') }}">Catalogue
+    </a>
+
+{% endblock %}
 
 {% block main %}
 
-  <h2>Bienvenue dans votre espace administration !</h2>
-
-  <a class="dashboard-button-catalog btn btn-primary mt-2 w-auto" href="{{ path('app_product') }}">Catalogue</a>
+<div class="container-fluid" style="color: #542525; background-color: #dccfbe;">
+    <h2 class="text-center" style="color: #f56247;">
+        Bienvenue dans votre espace administration !
+    </h2>
+    <br>
+    
+    <p class="row">
+        <button 
+            class="btn col"
+            style="background-color: #865d5d; color: #f56247;"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#productsManagement">Gestion des produits
+        </button>
+        <button 
+            class="btn col"
+            style="background-color: #865d5d; color: #f56247;"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#categoriesManagement">Gestion des catégories
+        </button>
+        <button 
+            class="btn col"
+            style="background-color: #865d5d; color: #f56247;"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#discountsManagement">Gestion des promotions
+        </button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse" id="productsManagement">
+                <div class="card card-body" style="background-color: #dccfbe;">
+                    <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Création d'un produit :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Modification d'un produit :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Suppression d'un produit :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse" id="categoriesManagement">
+                <div class="card card-body" style="background-color: #dccfbe;">
+                    <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Création d'une catégorie :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Modification d'une catégorie :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Suppression d'une catégorie :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse" id="discountsManagement">
+                <div class="card card-body" style="background-color: #dccfbe;">
+                    <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Création d'une promotion :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Modification d'une promotion :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Suppression d'une promotion :
+                            </h4>
+                        </li>
+                            <ul>
+                                <li class="fs-5">A complèter</li>
+                            </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
