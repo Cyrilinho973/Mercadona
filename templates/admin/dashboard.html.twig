@@ -19,8 +19,10 @@
     <h2 class="text-center pt-2" style="color: #f56247;">
         Bienvenue dans votre espace administration !
     </h2>
+    <p class="text-center fs-5" style="color: #542525; text-decoration: overline;">
+        Sélectionner un type de gestion ci-dessous pour voir la procédure associée
+    </p>
     <br>
-    
     <p class="row">
         <button 
             class="btn col"
@@ -49,29 +51,59 @@
             <div class="collapse" id="productsManagement">
                 <div class="card card-body mb-3" style="background-color: #dccfbe;">
                     <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
+                        <p class="fs-5 fw-bold text-center">A partir du menu 'Products'</p>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Création d'un produit :
                             </h4>
                         </li>
-                            <ul>
-                                <li class="fs-5">A complèter</li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>
+                                    -> Bouton 'Add Product',
+                                </li>
+                                <li>
+                                    -> Remplir le formulaire avec le label du produit, sa description, 
+                                    son prix (ex : 45.99), sa catégorie (obligatoire - si elle 
+                                    n'existe pas, la créer avant de créer le produit), une image du 
+                                    produit (facultative mais fortement conseillée) et une promotion 
+                                    (facultative),
+                                </li>
+                                <li>
+                                    -> Bouton 'Create' ou 'Create and add another' pour plusieurs 
+                                    créations d'affilées.
+                                </li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Modification d'un produit :
                             </h4>
                         </li>
-                            <ul>
-                                <li class="fs-5">A complèter</li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>
+                                    -> Bouton '...' puis 'Edit',
+                                </li>
+                                <li>
+                                    -> Modifier le(s) champs concerné(s) du formulaire (IMPORTANT : 
+                                    lors de la modification d'une image, cocher la case 'delete?' 
+                                    afin de supprimer l'ancienne image),
+                                </li>
+                                <li>
+                                    -> Bouton 'Save changes' ou 'Save and continue editing' pour rester 
+                                    dans la page d'édition.
+                                </li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Suppression d'un produit :
                             </h4>
                         </li>
-                            <ul>
-                                <li class="fs-5">A complèter</li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>
+                                    -> Bouton '...' puis 'Delete',
+                                </li>
+                                <li>
+                                    -> Confirmer la suppression ou annuler.
+                                </li>
                             </ul>
                     </ol>
                 </div>
@@ -88,9 +120,16 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton 'Add Category',</li>
-                                <li>-> Remplir le label de la catégorie,</li>
-                                <li>-> Bouton 'Create' ou 'Create and add another' pour plusieurs créations d'affilées.</li>
+                                <li>
+                                    -> Bouton 'Add Category',
+                                </li>
+                                <li>
+                                    -> Remplir le label de la catégorie,
+                                </li>
+                                <li>
+                                    -> Bouton 'Create' ou 'Create and add another' pour plusieurs 
+                                    créations d'affilées.
+                                </li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
@@ -98,9 +137,16 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton '...' puis 'Edit',</li>
-                                <li>-> Modifier le label de la catégorie,</li>
-                                <li>-> Bouton 'Save changes' ou 'Save and continue editing' pour rester dans la page d'édition.</li>
+                                <li>
+                                    -> Bouton '...' puis 'Edit',
+                                </li>
+                                <li>
+                                    -> Modifier le label de la catégorie,
+                                </li>
+                                <li>
+                                    -> Bouton 'Save changes' ou 'Save and continue editing' pour 
+                                    rester dans la page d'édition.
+                                </li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
@@ -108,8 +154,12 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton '...' puis 'Delete',</li>
-                                <li>-> Confirmer la suppression ou annuler.</li>
+                                <li>
+                                    -> Bouton '...' puis 'Delete',
+                                </li>
+                                <li>
+                                    -> Confirmer la suppression ou annuler.
+                                </li>
                             </ul>
                     </ol>
                 </div>
@@ -126,9 +176,18 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton 'Add Discount',</li>
-                                <li>-> Remplir le formulaire avec le label de la promotion, le pourcentage de réduction (ex: 10 pour 10%) et les dates et heures de début et fin,</li>
-                                <li>-> Bouton 'Create' ou 'Create and add another' pour plusieurs créations d'affilées.</li>
+                                <li>
+                                    -> Bouton 'Add Discount',
+                                </li>
+                                <li>
+                                    -> Remplir le formulaire avec le label de la promotion, le 
+                                    pourcentage de réduction (ex: 10 pour 10%) et les dates et heures 
+                                    de début et fin,
+                                </li>
+                                <li>
+                                    -> Bouton 'Create' ou 'Create and add another' pour plusieurs 
+                                    créations d'affilées.
+                                </li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
@@ -136,9 +195,16 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton '...' puis 'Edit',</li>
-                                <li>-> Modifier le(s) champs concerné(s) du formulaire,</li>
-                                <li>-> Bouton 'Save changes' ou 'Save and continue editing' pour rester dans la page d'édition.</li>
+                                <li>
+                                    -> Bouton '...' puis 'Edit',
+                                </li>
+                                <li>
+                                    -> Modifier le(s) champs concerné(s) du formulaire,
+                                </li>
+                                <li>
+                                    -> Bouton 'Save changes' ou 'Save and continue editing' pour 
+                                    rester dans la page d'édition.
+                                </li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
@@ -146,8 +212,12 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton '...' puis 'Delete',</li>
-                                <li>-> Confirmer la suppression ou annuler.</li>
+                                <li>
+                                    -> Bouton '...' puis 'Delete',
+                                </li>
+                                <li>
+                                    -> Confirmer la suppression ou annuler.
+                                </li>
                             </ul>
                     </ol>
                 </div>

@@ -21,7 +21,8 @@ class ProductCrudController extends AbstractCrudController
     
     public function configureFields(string $pageName): iterable
     {  
-        yield TextField::new('label');
+        yield TextField::new('label');      
+        yield TextField::new('description')->onlyOnForms();
         yield ImageField::new('imageName', 'Photo')->onlyOnIndex()->setBasePath('/images/products');
         yield TextField::new('price');
         yield AssociationField::new('category');
