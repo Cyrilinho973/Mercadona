@@ -39,7 +39,7 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('<img src="images/logo/Logo.png">')
+            ->setTitle('<img src="images/logo/Logo.png" style="width: 8rem" alt="Logo Mercadona">')
             ->disableDarkMode()
             ->setFaviconPath('images/logo/Logo.png');
     }
