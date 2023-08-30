@@ -25,29 +25,22 @@
     <br>
     <p class="row">
         <button 
-            class="btn col"
+            class="btn col-6"
             style="background-color: #865d5d; color: #f56247;"
             type="button" 
             data-bs-toggle="collapse" 
             data-bs-target="#productsManagement">Gestion des produits
         </button>
         <button 
-            class="btn col"
+            class="btn col-6"
             style="background-color: #865d5d; color: #f56247;"
             type="button" 
             data-bs-toggle="collapse" 
             data-bs-target="#categoriesManagement">Gestion des catégories
         </button>
-        <button 
-            class="btn col"
-            style="background-color: #865d5d; color: #f56247;"
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#discountsManagement">Gestion des promotions
-        </button>
     </p>
     <div class="row">
-        <div class="col">
+        <div class="col-6">
             <div class="collapse" id="productsManagement">
                 <div class="card card-body mb-3" style="background-color: #dccfbe;">
                     <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
@@ -109,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-6">
             <div class="collapse" id="categoriesManagement">
                 <div class="card card-body mb-3" style="background-color: #dccfbe;">
                     <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
@@ -165,7 +158,25 @@
                 </div>
             </div>
         </div>
-        <div class="col">
+    </div>
+    <p class="row">
+        <button 
+            class="btn col-6"
+            style="background-color: #865d5d; color: #f56247;"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#discountsManagement">Gestion des promotions
+        </button>
+        <button 
+            class="btn col-6"
+            style="background-color: #865d5d; color: #f56247;"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#adminsManagement">Gestion des administrateurs
+        </button>
+    </p>
+    <div class="row">
+        <div class="col-6">
             <div class="collapse" id="discountsManagement">
                 <div class="card card-body mb-3" style="background-color: #dccfbe;">
                     <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
@@ -209,6 +220,63 @@
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Suppression d'une promotion :
+                            </h4>
+                        </li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>
+                                    -> Bouton '...' puis 'Delete',
+                                </li>
+                                <li>
+                                    -> Confirmer la suppression ou annuler.
+                                </li>
+                            </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="collapse" id="adminsManagement">
+                <div class="card card-body mb-3" style="background-color: #dccfbe;">
+                    <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
+                        <p class="fs-5 fw-bold text-center">A partir du menu 'Administrateurs'</p>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Création d'un administrateur :
+                            </h4>
+                        </li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>
+                                    -> Bouton 'Add Admin',
+                                </li>
+                                <li>
+                                    -> Remplir le formulaire avec le username de l'administrateur, 
+                                    le mot de passe (2 fois) et le role 'ROLE_ADMIN',
+                                </li>
+                                <li>
+                                    -> Bouton 'Create' ou 'Create and add another' pour plusieurs 
+                                    créations d'affilées.
+                                </li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Modification d'un administrateur :
+                            </h4>
+                        </li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>
+                                    -> Bouton '...' puis 'Edit',
+                                </li>
+                                <li>
+                                    -> Modifier le(s) champs concerné(s) du formulaire,
+                                </li>
+                                <li>
+                                    -> Bouton 'Save changes' ou 'Save and continue editing' pour 
+                                    rester dans la page d'édition.
+                                </li>
+                            </ul>
+                        <li style="color: #f56247;">
+                            <h4 class="text-decoration-underline" style="color: #f56247;">
+                                Suppression d'un administrateur :
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
