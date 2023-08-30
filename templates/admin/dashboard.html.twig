@@ -2,20 +2,20 @@
 
 {% block content_title %}
 
-    <h1 class="text-center" style="text-decoration: overline; color: #542525; background-color: #dccfbe;">
+    <h1 class="text-center rounded-top" style="text-decoration: overline; color: #542525; background-color: #dccfbe;">
         Tableau de bord d'administration du site www.Mercadona.es
     </h1>
-    <a 
+    <div class="d-flex justify-content-center"><a 
         class="dashboard-button-catalog btn mt-2 w-auto"
         style="background-color: #f56247; color: #542525;"
-        href="{{ path('app_product') }}">Catalogue
-    </a>
+        href="{{ path('app_product') }}">Retour au catalogue
+    </a></div>
 
 {% endblock %}
 
 {% block main %}
 
-<div class="container-fluid" style="color: #542525; background-color: #dccfbe;">
+<div class="container-fluid rounded-bottom" style="color: #542525; background-color: #dccfbe;">
     <h2 class="text-center" style="color: #f56247;">
         Bienvenue dans votre espace administration !
     </h2>
@@ -47,7 +47,7 @@
     <div class="row">
         <div class="col">
             <div class="collapse" id="productsManagement">
-                <div class="card card-body" style="background-color: #dccfbe;">
+                <div class="card card-body mb-3" style="background-color: #dccfbe;">
                     <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
@@ -79,18 +79,18 @@
         </div>
         <div class="col">
             <div class="collapse" id="categoriesManagement">
-                <div class="card card-body" style="background-color: #dccfbe;">
+                <div class="card card-body mb-3" style="background-color: #dccfbe;">
                     <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
-                        <p class="fs-5 fw-bold">A partir du menu 'Categories'</p>
+                        <p class="fs-5 fw-bold text-center">A partir du menu 'Categories'</p>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Création d'une catégorie :
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton 'Add Category'</li>
-                                <li>-> Remplir le nom de la catégorie</li>
-                                <li>-> Bouton 'Create' ou 'Create and add another' pour plusieurs créations d'affilée</li>
+                                <li>-> Bouton 'Add Category',</li>
+                                <li>-> Remplir le label de la catégorie,</li>
+                                <li>-> Bouton 'Create' ou 'Create and add another' pour plusieurs créations d'affilées.</li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
@@ -98,9 +98,9 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton '...' puis 'Edit'</li>
-                                <li>-> Modifier le nom de la catégorie</li>
-                                <li>-> Bouton 'Save changes' ou 'Save and continue editing' pour plusieurs créations d'affilée</li>
+                                <li>-> Bouton '...' puis 'Edit',</li>
+                                <li>-> Modifier le label de la catégorie,</li>
+                                <li>-> Bouton 'Save changes' ou 'Save and continue editing' pour rester dans la page d'édition.</li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
@@ -108,8 +108,8 @@
                             </h4>
                         </li>
                             <ul class="fs-6" style="list-style: none;">
-                                <li>-> Bouton '...' puis 'Delete'</li>
-                                <li>-> Confirmer la suppression ou annuler</li>
+                                <li>-> Bouton '...' puis 'Delete',</li>
+                                <li>-> Confirmer la suppression ou annuler.</li>
                             </ul>
                     </ol>
                 </div>
@@ -117,31 +117,37 @@
         </div>
         <div class="col">
             <div class="collapse" id="discountsManagement">
-                <div class="card card-body" style="background-color: #dccfbe;">
+                <div class="card card-body mb-3" style="background-color: #dccfbe;">
                     <ol class="fs-4" style="list-style: upper-roman; color: #542525;">
+                        <p class="fs-5 fw-bold text-center">A partir du menu 'Discounts'</p>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Création d'une promotion :
                             </h4>
                         </li>
-                            <ul>
-                                <li class="fs-5">A complèter</li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>-> Bouton 'Add Discount',</li>
+                                <li>-> Remplir le formulaire avec le label de la promotion, le pourcentage de réduction (ex: 10 pour 10%) et les dates et heures de début et fin,</li>
+                                <li>-> Bouton 'Create' ou 'Create and add another' pour plusieurs créations d'affilées.</li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Modification d'une promotion :
                             </h4>
                         </li>
-                            <ul>
-                                <li class="fs-5">A complèter</li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>-> Bouton '...' puis 'Edit',</li>
+                                <li>-> Modifier le(s) champs concerné(s) du formulaire,</li>
+                                <li>-> Bouton 'Save changes' ou 'Save and continue editing' pour rester dans la page d'édition.</li>
                             </ul>
                         <li style="color: #f56247;">
                             <h4 class="text-decoration-underline" style="color: #f56247;">
                                 Suppression d'une promotion :
                             </h4>
                         </li>
-                            <ul>
-                                <li class="fs-5">A complèter</li>
+                            <ul class="fs-6" style="list-style: none;">
+                                <li>-> Bouton '...' puis 'Delete',</li>
+                                <li>-> Confirmer la suppression ou annuler.</li>
                             </ul>
                     </ol>
                 </div>
