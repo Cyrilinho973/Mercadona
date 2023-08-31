@@ -13,10 +13,24 @@ class ProductController extends AbstractController
     #[Route('/', name: 'app_product')]
     public function index(CategoryRepository $categoryRepository ,ProductRepository $productRepository): Response
     {
+        $category_id = "";
+
+        if($_POST){
+            $category_id = $_POST["categories"];
+            if($category_id){
+                return $this->render('product/index.html.twig', [
+                    'categories' => $categoryRepository->findAll(),
+                    'products' => $productRepository->findByCategory($category_id),
+                    'typeSelected' => $category_id,
+                    'form' => $category_id,
+                ]);
+            }
+        };
+        
         return $this->render('product/index.html.twig', [
-            'categories' => $categoryRepository->findAll(),
-            'products' => $productRepository->findAll(),
-            'typeSelected' => "",
+            'categories' => $categoryRepository->findBy([], ['label' => 'ASC']),
+            'products' => $productRepository->findBy([], ['label' => 'ASC']),
+            'typeSelected' => $category_id,
         ]);
     }
 }

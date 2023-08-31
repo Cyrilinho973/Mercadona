@@ -1,12 +1,21 @@
 <header>
     <nav class="header fixed-top navbar navbar-expand-lg" >
         <div class="container-fluid ">
-            <img class="navbar-brand" src={{ asset('images/logo/Logo.png') }} style="width: 5rem;" alt="Logo Mercadona">
-            <button class="navbar-toggler" type="button" title="button-go" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <img 
+                class="navbar-brand" 
+                src={{ asset('images/logo/Logo.png') }} 
+                style="width: 5rem;" alt="Logo Mercadona"
+            >
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                title="button-go" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-                <div class="col-12 col-lg-1"></div> 
+                <div class="col-12 col-lg-1">{{ form }}</div> 
                 <form class="d-flex mt-2 col-12 col-md-8 col-lg-5 col-xl-4 col-xxl-3" method="post">
                     <select class="form-select me-2" name="categories" id="categories" title="category-select">
                         <option value="">All categories</option>
