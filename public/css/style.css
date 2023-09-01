@@ -96,6 +96,24 @@ body{
 .card-product-price {
     font-family: var(--font-family-serif);
 }
+.card-discount-price {
+    color: red;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-product-base-price {
+    text-decoration: line-through;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-discount-rate {
+    color: red;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-discount-stop-date {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 /******************** footer.html.twig ********************/
 .footer {

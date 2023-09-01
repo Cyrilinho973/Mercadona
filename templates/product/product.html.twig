@@ -2,6 +2,9 @@
     <div class="products-list px-3">
         <h1 class="catalog-title text-center pt-3">Catalogue</h1>
         <div class="row d-flex justify-content-center">
+            {% if products == [] %}
+                <p class="text-center fs-3">Aucun produit disponible dans cette catégorie...</p>
+            {% endif %}
             {% for product in products %}
                 <div class="card col-12 col-lg-4 m-3">
                     <div class="card-header row g-0 d-flex justify-content-center">
@@ -23,10 +26,21 @@
                     <div class="card-footer row g-0 text-center">
                         <div class="col-6">
                             <div>
-                                <h1 class="card-product-price">{{ product.price }}€</h1>
+                                {% if product.checkDiscountValidity() == false %}
+                                    <h1 class="card-product-price">{{ product.price }}€</h1>
+                                {% else %}
+                                    <h1 class="card-discount-price">{{ product.calculatePriceDiscount() }}€</h1>
+                                    <p class="card-product-base-price">{{ product.price }}€</p>
+                                {% endif %}
                             </div>
                         </div>
                         <div class="col-6">
+                            <div>
+                                {% if product.checkDiscountValidity() == true %}
+                                    <h2 class="card-discount-rate">-{{ product.discount.rate }} %</h2>
+                                    <p class="card-discount-stop-date">Jusqu'au {{ product.discount.getStopDate()|date('d/m/Y') }}</p>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
