@@ -38,7 +38,6 @@
                             <div>
                                 {% if product.checkDiscountValidity() == true %}
                                     <h2 class="card-discount-rate">-{{ product.discount.rate }} %</h2>
-                                    <p class="card-discount-stop-date">Jusqu'au {{ product.discount.getStopDate()|date('d/m/Y') }}</p>
                                 {% endif %}
                             </div>
                         </div>
