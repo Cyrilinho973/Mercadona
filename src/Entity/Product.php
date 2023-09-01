@@ -162,4 +162,9 @@ class Product
         return $this;
     }
 
+    public function calculatePriceDiscount(): ?float
+    {
+        return null;
+    }
+
 }
