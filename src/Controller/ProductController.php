@@ -19,7 +19,7 @@ class ProductController extends AbstractController
             $category_id = $_POST["categories"];
             if($category_id){
                 return $this->render('product/index.html.twig', [
-                    'categories' => $categoryRepository->findAll(),
+                    'categories' => $categoryRepository->findBy([], ['label' => 'ASC']),
                     'products' => $productRepository->findByCategory($category_id),
                     'typeSelected' => $category_id,
                     'form' => $category_id,
