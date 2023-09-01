@@ -171,4 +171,13 @@ class Product
         return ($this->price * (1 - ($this->discount->getRate() / 100)))|round(2);
     }
 
+    public function checkDiscountValidity(): bool
+    {
+        if($this->discount === null) {
+            return false;
+        };
+        $now = new DateTime();
+        return ((($now > $this->discount->getStartDate()) && ($now < $this->discount->getStopDate())) ? true : false);
+    }
+
 }
