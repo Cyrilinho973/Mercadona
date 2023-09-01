@@ -164,7 +164,10 @@ class Product
 
     public function calculatePriceDiscount(): ?float
     {
-        return null;
+        if($this->discount === null) {
+            return null;
+        };
+        return ($this->price * (1 - ($this->discount->getRate() / 100)))|round(2);
     }
 
 }
