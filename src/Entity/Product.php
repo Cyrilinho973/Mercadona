@@ -163,12 +163,12 @@ class Product
         return $this;
     }
 
-    public function calculatePriceDiscount(): ?float
+    public function calculatePriceDiscount(): ?string
     {
         if($this->discount === null) {
             return null;
         };
-        return ($this->price * (1 - ($this->discount->getRate() / 100)))|round(2);
+        return round(($this->price * (1 - ($this->discount->getRate() / 100))), 2);
     }
 
     public function checkDiscountValidity(): bool

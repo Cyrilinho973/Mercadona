@@ -14,10 +14,10 @@ class ProductTest extends TestCase
       ->setRate(10);
     
     $product = (new Product())
-      ->setPrice(100)
+      ->setPrice(35.70)
       ->setDiscount($discount);
 
-    $this->assertEquals(90, $product->calculatePriceDiscount());
+    $this->assertEquals(32.13, $product->calculatePriceDiscount());
   }
 
   public function testCheckDiscountValidity()

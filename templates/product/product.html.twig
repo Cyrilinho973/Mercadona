@@ -27,10 +27,10 @@
                         <div class="col-6">
                             <div>
                                 {% if product.checkDiscountValidity() == false %}
-                                    <h1 class="card-product-price">{{ product.price }}€</h1>
+                                    <h1 class="card-product-price">{{ product.price|number_format(2, ',') }}€</h1>
                                 {% else %}
-                                    <h1 class="card-discount-price">{{ product.calculatePriceDiscount() }}€</h1>
-                                    <p class="card-product-base-price">{{ product.price }}€</p>
+                                    <h1 class="card-discount-price">{{ product.calculatePriceDiscount()|number_format(2, ',') }}€</h1>
+                                    <p class="card-product-base-price">{{ product.price|number_format(2, ',') }}€</p>
                                 {% endif %}
                             </div>
                         </div>
