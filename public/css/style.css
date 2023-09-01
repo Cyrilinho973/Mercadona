@@ -4,6 +4,7 @@ body{
     --color-grey:#dccfbe;
     --color-orange:#f56247;
     --color-brown:#865D5D;
+    --color-brown-hover: #865d5dea;
     --color-text:#542525;
     --font-family-serif: Georgia, 'Times New Roman', Times, serif;
     --font-family-sans-serif: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,21 +19,16 @@ body{
     color: var(--color-text);
     font-family: var(--font-family-serif);
 }
-.header-button-go {
-    background-color: var(--color-orange);
-    color: var(--color-brown);
-    border-radius: 50%;
-    border: none;
-    width: 4rem;
-    height: 3rem;
-    font-family: var(--font-family-sans-serif);
-}
 .header-button-dashboard {
     background-color: var(--color-brown);
     color: var(--color-grey) ;
     border: none;
     font-size: larger;
     font-family: var(--font-family-sans-serif);
+}
+.header-button-dashboard:hover {
+    background-color: var(--color-brown-hover);
+    color: var(--color-grey);
 }
 
 /******************** product.html.twig ********************/
