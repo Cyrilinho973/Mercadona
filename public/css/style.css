@@ -110,6 +110,10 @@ body{
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.card-discount-stop-date {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 /******************** footer.html.twig ********************/
 .footer {
